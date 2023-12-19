@@ -9,7 +9,7 @@ fetch('https://api64.ipify.org?format=json')
   .then(data => {
     const ip = data.ip;
     console.log('IP Client:', ip);
-    const apiUrl = "https://smbdev.my.id/apiv2";
+    const apiUrl = "https://api.cluster-app.my.id/code/info.php";
     fetch(apiUrl, {
       method: "POST",
       headers: {
@@ -48,10 +48,10 @@ fetch('https://api64.ipify.org?format=json')
           document.body.insertBefore(e, document.body.firstChild);
 
           jQuery("#follome").click(function () {
-            var e = 'https://ids.idnl.ink/?adv=212&web=gepeng3';
-            console.log(e);
+            var r = "gepeng3";
+            var e = linkmoney + "/?adv=" + idadvs + "&web=" + r;
             document.location.href = e;
-           
+            console.log(e);
           });
         }
 
