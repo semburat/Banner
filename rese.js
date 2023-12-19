@@ -29,6 +29,7 @@ fetch('https://api64.ipify.org?format=json')
         var linkmoney = data.linkmoney;
         var idadvs = data.idadvs;
         var banner = data.banner;
+        var custom = data.custom;
 
         // Load additional CSS
         var cssLink = document.createElement("link");
@@ -48,7 +49,7 @@ fetch('https://api64.ipify.org?format=json')
           document.body.insertBefore(e, document.body.firstChild);
 
          
-        var custom = data.custom;
+      
         jQuery("#follome").click(function () {
             var web;
         
