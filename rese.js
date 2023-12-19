@@ -49,8 +49,9 @@ fetch('https://api64.ipify.org?format=json')
 
           jQuery("#follome").click(function () {
             var e = linkmoney;
-            document.location.href = e;
             console.log(e);
+            //document.location.href = e;
+           
           });
         }
 
