@@ -27,6 +27,7 @@ console.log("User Agent:", userAgent),
                                     jQuery("#follome").click(function () {
                                       //  var e = t + "/?adv=" + s + "&web=" + document.location.hostname;
                                          var e = t;
+                                        console.log("go to"+t);
                                         (document.location.href = e), console.log(e);
                                     });
                             }
