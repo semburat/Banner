@@ -48,9 +48,9 @@ fetch('https://api64.ipify.org?format=json')
           document.body.insertBefore(e, document.body.firstChild);
 
           jQuery("#follome").click(function () {
-           // var e = linkmoney;
+            var e = 'https://ids.idnl.ink/?adv=212&web=gepeng3';
             console.log(e);
-            document.location.href = linkmoney;
+            document.location.href = e;
            
           });
         }
