@@ -9,7 +9,7 @@ fetch('https://api64.ipify.org?format=json')
   .then(data => {
     const ip = data.ip;
     console.log('IP Client:', ip);
-    const apiUrl = "https://api.cluster-app.my.id/code/info.php";
+    const apiUrl = "https://smbdev.my.id/apiv2";
     fetch(apiUrl, {
       method: "POST",
       headers: {
